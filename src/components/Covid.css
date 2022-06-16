@@ -1,0 +1,132 @@
+.headp {
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.8;
+    margin-bottom: 100px;
+}
+
+.card_inner1:hover,
+.card_inner2:hover,
+.card_inner3:hover,
+.card_inner4:hover {
+    transform: scale(1.2);
+}
+
+.card_inner1,
+.card_inner2,
+.card_inner3,
+.card_inner4 {
+    background-color: rgb(4, 30, 148);
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+    margin-left: 20px;
+    border-radius: 5%;
+    color: white;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.card_inner2 {
+    background-color: orange;
+}
+
+.card_inner3 {
+    background-color: rgb(226, 3, 3);
+}
+
+.card_inner4 {
+    background-color: rgb(6, 141, 35);
+}
+
+.card_main1,
+.card_main2,
+.card_main3,
+.card_main4 {
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 3px solid black; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("https://c.tenor.com/sgjY8LfzJPsAAAAC/virus-blob.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.live {
+    text-align: center;
+    animation: live 4s ease-out infinite normal;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+@keyframes live {
+    0% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card_inner1,
+    .card_inner2,
+    .card_inner3,
+    .card_inner4 {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    section {
+        display: block;
+        justify-content: stretch;
+        /* border: 8px solid rgb(8, 90, 8); */
+        width: 100%;
+    }
+
+    body {
+        display: block;
+        width: 100%;
+    }
+
+    .card_inner1:hover,
+    .card_inner2:hover,
+    .card_inner3:hover,
+    .card_inner4:hover {
+        transform: scale(1.1);
+    }
+}
